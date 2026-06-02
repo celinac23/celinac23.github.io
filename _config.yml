@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Yufei (Celina) Chen"
 title_separator          : "-"
 name                     : &name "Celina Chen"
-description              : &description "Undergraduate Researcher | University of Toronto"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Incoming MASc student | University of Toronto"   # Update this with a general description of your site, this is the default if not overridden by a page
 url: "https://celinac23.github.io"
 baseurl: ""
 
@@ -29,7 +29,7 @@ author:
   avatar           : "square_image.jpg"
   name             : "Yufei (Celina) Chen"
   pronouns         : # example: "she/her"  
-  bio              : "Undergraduate student at University of Toronto and Undergraduate Researcher at Vector Institute"
+  bio              : "Incoming Master's student at University of Toronto"
   location         : "Toronto, Canada"
   employer         : # 
   uri              : # URL
