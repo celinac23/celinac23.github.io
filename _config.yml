@@ -14,12 +14,12 @@ title_separator          : "-"
 name                     : &name "Celina Chen"
 description              : &description "Undergraduate Researcher | University of Toronto"   # Update this with a general description of your site, this is the default if not overridden by a page
 url: "https://celinac23.github.io"
-baseurl: "/celina-chen.github.io"
+baseurl: ""
 
 
  # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-repository               : "celinac23.github.io/celina-chen.github.io/"
+repository: "celinac23/celinac23.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
