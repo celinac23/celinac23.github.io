@@ -24,6 +24,7 @@ I am also drawn to **interpretability and representation learning**, and how int
 - **University of Toronto**  
   B.Sc. (Undergraduate), Computer Science Specialist  
   2023–2026
+  
 ---
 
 *This website documents my research, projects, and academic activities.*
