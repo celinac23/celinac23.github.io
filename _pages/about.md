@@ -16,9 +16,9 @@ I am broadly interested in **machine learning**, with particular focus on:
 - Mechanistic interpretability  
 
 ### Current work
-I am a researcher advised by **Professor Nicolas Papernot**, examining how models can be adapted under data scarcity and sensitivity—particularly when retraining is constrained by privacy or uneven data availability. One line of this work studies **differentially private data mixing**, where mixtures of public datasets are learned to compensate for limited private data without consuming additional privacy budget.
+I am a researcher advised by **Professor Nicolas Papernot**, examining how models can be adapted under data scarcity and sensitivity, particularly when retraining is constrained by privacy or uneven data availability. One line of this work studies **differentially private data mixing**, where mixtures of public datasets are learned to compensate for limited private data without consuming additional privacy budget.
 
-I am also drawn to **interpretability and representation learning**, and how internal representations shape model behavior after training. I have investigated **model merging through representation alignment**—studying when and how aligning internal feature spaces improves mergeability while preserving task-specific structure. A brief summary of that work is available **[here](https://drive.google.com/file/d/16BTpnh2UPe-qD-gg4SZcvCQVvmtWgZ_b/view?usp=sharing)**. 
+I am also drawn to **interpretability and representation learning**, and how internal representations shape model behavior after training. I have investigated **model merging through representation alignment**, studying when and how aligning internal feature spaces improves mergeability while preserving task-specific structure. A brief summary of that work is available **[here](https://drive.google.com/file/d/16BTpnh2UPe-qD-gg4SZcvCQVvmtWgZ_b/view?usp=sharing)**.
 
 ### Education
 - **University of Toronto**  
