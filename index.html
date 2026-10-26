@@ -7,21 +7,18 @@ redirect_from:
   - /about.html
 ---
 
-<section class="hero wrap">
+<section class="wrap hero">
   <div class="hero-text">
-    <p class="eyebrow">Trustworthy AI · University of Toronto</p>
+    <p class="kicker">Trustworthy AI · University of Toronto</p>
     <h1>Intelligence,<br><em>worthy of trust.</em></h1>
     <p class="lede">
       I'm <strong>Celina</strong>. I study how to make machine learning models private, secure and robust,
       and how those guarantees trade off with what the models can do.
     </p>
-    <p class="lede lede-small">
-      M.A.Sc. student in Electrical &amp; Computer Engineering at the University of Toronto, advised by
-      Prof. Nicolas Papernot. Researcher at the Vector Institute and the CleverHans Lab.
-    </p>
     <div class="hero-actions">
-      <a class="button" href="#research">Explore my work</a>
-      <a class="button button-ghost" href="{{ '/cv/' | relative_url }}">Curriculum vitae</a>
+      <a class="button" href="#publications">See my work</a>
+      <a class="button button-ghost" href="{{ '/cv/' | relative_url }}">CV</a>
+      {% include social.html %}
     </div>
   </div>
   <figure class="portrait">
@@ -29,85 +26,70 @@ redirect_from:
   </figure>
 </section>
 
-<section class="section wrap reveal">
-  <header class="section-head">
-    <p class="eyebrow">Focus</p>
-    <h2>Two questions I keep returning to</h2>
-  </header>
-  <div class="focus-grid focus-grid-2">
-    <div class="focus">
-      <span class="numeral">i.</span>
-      <h3>Agent security</h3>
-      <p>As AI agents take on more of our work, how do we make sure every action they take keeps our systems safe?</p>
-    </div>
-    <div class="focus">
-      <span class="numeral">ii.</span>
-      <h3>Interpretability</h3>
-      <p>How do models understand what they learn? Their internal representations may hold the key to core problems like adversarial robustness and continual learning.</p>
-    </div>
+<section class="wrap facts reveal" aria-label="Quick facts">
+  <div class="fact"><span class="fact-label">Program</span><span class="fact-value">M.A.Sc., ECE · UofT</span></div>
+  <div class="fact"><span class="fact-label">Advisor</span><span class="fact-value">Nicolas Papernot</span></div>
+  <div class="fact"><span class="fact-label">Lab</span><span class="fact-value">CleverHans · Vector</span></div>
+  <div class="fact"><span class="fact-label">Award</span><span class="fact-value">Schulich Leader</span></div>
+</section>
+
+<section class="wrap section reveal">
+  <h2 class="section-title"><span class="num">01</span>Two questions I keep returning to</h2>
+  <div class="grid-2">
+    <article class="card">
+      <p class="card-label">Agent security</p>
+      <p class="card-text">As AI agents take on more of our work, how do we make sure every action they take keeps our systems safe?</p>
+    </article>
+    <article class="card">
+      <p class="card-label">Interpretability</p>
+      <p class="card-text">How do models understand what they learn? Their internal representations may hold the key to core problems like adversarial robustness and continual learning.</p>
+    </article>
   </div>
 </section>
 
-<section class="vision wrap reveal">
-  <p class="eyebrow">Looking ahead</p>
-  <p class="vision-line">
-    I believe <em>continual learning</em> is the most important open problem in AI: understanding how models
-    keep learning after deployment, and catching it when that learning goes wrong. My work is a step toward it.
-  </p>
-</section>
-
-<section class="band" id="research">
-  <div class="wrap reveal">
-    <header class="section-head">
-      <h2>Selected publications</h2>
-    </header>
-
-    <ol class="pubs">
-      <li class="pub">
-        <div>
-          <a class="pub-title" href="https://arxiv.org/abs/2610.06636">Differentially private mixing of public datasets improves private learning</a>
-          <p class="pub-authors"><strong>Yufei Chen</strong>, Tejumade Afonja, Anvith Thudi, Nicolas Papernot</p>
-          <p class="pub-venue">arXiv 2026</p>
-          <div class="links">
-            <a class="text-link" href="https://arxiv.org/abs/2610.06636">arXiv</a>
-            <a class="text-link" href="https://scholar.google.ca/citations?view_op=view_citation&amp;hl=en&amp;user=BdKXdkUAAAAJ&amp;citation_for_view=BdKXdkUAAAAJ:u5HHmVD_uO8C">Google Scholar</a>
-            <a class="text-link" href="https://drive.google.com/file/d/1zZtuMSawP2zhd0jKgManUSvR1c45o-Je/view?usp=sharing">Poster</a>
-          </div>
-        </div>
-      </li>
-    </ol>
+<section class="wrap section reveal">
+  <div class="vision">
+    <p class="vision-label">Looking ahead</p>
+    <p class="vision-line">
+      I believe <strong>continual learning</strong> is the most important open problem in AI: understanding how models
+      keep learning after deployment, and catching it when that learning goes wrong. My work is a step toward it.
+    </p>
   </div>
 </section>
 
-<section class="section wrap reveal">
-  <header class="section-head">
-    <p class="eyebrow">Education</p>
-    <h2>University of Toronto</h2>
-  </header>
-  <ol class="timeline">
-    <li>
-      <span class="when">Sep 2026 – Present</span>
-      <div>
-        <strong>M.A.Sc., Electrical &amp; Computer Engineering</strong>
-        <span>Advised by Prof. Nicolas Papernot</span>
-      </div>
-    </li>
-    <li>
-      <span class="when">Sep 2023 – May 2026</span>
-      <div>
-        <strong>B.Sc. Honours, Computer Science Specialist</strong>
-        <span>Full ride as a <a href="https://schulichleaders.com">Schulich Leader Scholar</a></span>
+<section class="wrap section reveal" id="publications">
+  <h2 class="section-title"><span class="num">02</span>Selected publications</h2>
+  <ol class="pubs">
+    <li class="card pub">
+      <span class="chip">arXiv 2026</span>
+      <a class="pub-title" href="https://arxiv.org/abs/2610.06636">Differentially private mixing of public datasets improves private learning</a>
+      <p class="pub-authors"><strong>Yufei Chen</strong>, Tejumade Afonja, Anvith Thudi, Nicolas Papernot</p>
+      <div class="pub-links">
+        <a class="pill" href="https://arxiv.org/abs/2610.06636">arXiv</a>
+        <a class="pill" href="https://scholar.google.ca/citations?view_op=view_citation&amp;hl=en&amp;user=BdKXdkUAAAAJ&amp;citation_for_view=BdKXdkUAAAAJ:u5HHmVD_uO8C">Google Scholar</a>
+        <a class="pill" href="https://drive.google.com/file/d/1zZtuMSawP2zhd0jKgManUSvR1c45o-Je/view?usp=sharing">Poster</a>
       </div>
     </li>
   </ol>
 </section>
 
+<section class="wrap section reveal">
+  <h2 class="section-title"><span class="num">03</span>Education</h2>
+  <div class="card table">
+    <div class="row">
+      <span class="when">Sep 2026 – Present</span>
+      <div><strong>M.A.Sc., Electrical &amp; Computer Engineering</strong><span>University of Toronto · Advised by Prof. Nicolas Papernot</span></div>
+    </div>
+    <div class="row">
+      <span class="when">Sep 2023 – May 2026</span>
+      <div><strong>B.Sc. Honours, Computer Science Specialist</strong><span>University of Toronto · Full ride as a <a href="https://schulichleaders.com">Schulich Leader Scholar</a></span></div>
+    </div>
+  </div>
+</section>
+
 {% if site.posts.size > 0 %}
-<section class="section wrap reveal">
-  <header class="section-head">
-    <p class="eyebrow">Journal</p>
-    <h2>Latest writing</h2>
-  </header>
+<section class="wrap section reveal">
+  <h2 class="section-title"><span class="num">04</span>Latest writing</h2>
   <ul class="post-list">
     {% for post in site.posts limit: 3 %}
     <li>
@@ -116,12 +98,12 @@ redirect_from:
     </li>
     {% endfor %}
   </ul>
-  <a class="text-link" href="{{ '/blog/' | relative_url }}">All posts</a>
 </section>
 {% endif %}
 
-<section class="closing wrap reveal">
-  <p class="eyebrow">Get in touch</p>
-  <p class="closing-line">Always happy to talk about <em>trustworthy AI</em>, research ideas, or collaborations.</p>
-  <a class="button" href="mailto:{{ site.author.email }}">Write to me</a>
+<section class="wrap section reveal">
+  <div class="contact card">
+    <p class="contact-line">Always happy to talk about <em>trustworthy AI</em>, research ideas, or collaborations.</p>
+    <a class="button" href="mailto:{{ site.author.email }}">Write to me</a>
+  </div>
 </section>
