@@ -1,0 +1,28 @@
+---
+layout: page
+title: "Blog"
+subtitle: "Notes on research, interesting findings to share with the community, machine learning, and things I'm learning!"
+permalink: /blog/
+redirect_from:
+  - /year-archive/
+---
+
+{% if site.posts.size > 0 %}
+  {% assign by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% for year in by_year %}
+  <h2 class="year">{{ year.name }}</h2>
+  <ul class="post-list">
+    {% for post in year.items %}
+    <li>
+      <div>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% if post.description %}<p class="muted">{{ post.description }}</p>{% endif %}
+      </div>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d' }}</time>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+{% else %}
+  <p class="empty">The first post is on its way. Check back soon.</p>
+{% endif %}
